@@ -3,16 +3,22 @@
   "version": "1.0.0",
   "description": "REST API with Hapi.js and MongoDB",
   "scripts": {
-    "dev": "nodemon ./app/index.js"
+    "dev": "NODE_ENV=development nodemon ./app/index.js --exec babel-node"
   },
   "author": "Bedu",
   "license": "MIT",
   "dependencies": {
+    "app-module-path": "^2.2.0",
     "dotenv": "^6.0.0",
     "glob": "^7.1.2",
     "hapi": "^17.5.2"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
     "nodemon": "^1.17.5"
   }
 }

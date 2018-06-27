@@ -1,7 +1,7 @@
 require('dotenv').config()
-const Hapi = require('hapi')
-const glob = require('glob')
-const path = require('path')
+import Hapi from 'hapi'
+import glob from 'glob'
+import path from 'path'
 
 const server = new Hapi.Server({
   port: process.env.PORT || 4000,
